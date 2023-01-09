@@ -26,7 +26,7 @@ export default function Home(data:userObject) {
         <Box w="25%" textAlign={"center"} justifyContent="center" alignItems={"center"}>
           <Box boxShadow={"xl"} rounded="md" justifyContent={"center"} p="15px" textAlign={"center"} alignItems="center">
             <Box display={"flex"} justifyContent="center">
-              <Image w="10rem" borderRadius={"50px"} src={data.avatar_url}/>
+              <Image w="10rem" borderRadius={"50px"} src={data.avatar_url} alt="profile"/>
             </Box>
             <Link href="https://github.com/YashSharma7746" target="_blank" rel="noopener noreferrer">@{data.login}</Link>
             <Text>{data.bio}</Text>

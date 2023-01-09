@@ -25,7 +25,7 @@ const Projects = () => {
         <Heading textAlign={"center"}>Projects</Heading>
     <Box display={"grid"} gridTemplateColumns="repeat(2,1fr)" gap="10px" w="70%"m="auto">
         {data && data.map((item)=>{
-            return <Link href={`https://github.com/YashSharma7746/${item.name}`}>
+            return <Link href={`https://github.com/YashSharma7746/${item.name}`} key={item.name}>
                 <Box display={"flex"} p="25px" position={"relative"} boxShadow={"xl"}>
                     <Box>
                         <Heading as="h3" size="md">{item.name}</Heading>
